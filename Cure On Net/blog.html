@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Health Blog Management</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script>            
+        function increase(){
+        var a = 1;
+        var textBox = document.getElementById("text");
+        textBox.value++;
+        
+    }    
+    function decrease(){
+      var textBox = document.getElementById("text");
+        textBox.value--;
+    }
+</script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="home.html">Home</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="covid.html">Covid</a>
+                </div>               
+                <div class="nav-link-wrapper active-nav-link">
+                    
+                    <a href="blog.html">Health Blog</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    
+                    <a href="featured.html">Featured</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    
+                    <a href="health.html">Health Checkup</a>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="brand">
+                    <div class="nav-link-wrapper">
+                    <a href="team.html">The Spectaculars</a>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-wrapper">
+            <div class="two-column-wrapper">
+                <div class="profile-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1560582861-45078880e48e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nnx8aGVhbHRoY2FyZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60.jpg" alt="No pic">
+                </div>
+
+                <div class="profile-content-wrapper">
+                    <h1>Health Blog Management</h1>
+                   <b> <p>Placeholder
+
+                    </p></b>
+                    
+                
+                    <h4 style="color: lightseagreen;">MESS CHECK IN</h4>
+                    <div class="button1">
+                    <button style="background: rgb(165, 236, 132); border-radius: 10%;" type="button" onclick="increase()">ENTER MESS</button>
+                </div>
+                    <input type="text" id="text" value="0">
+                    <div class="button1">
+                    <button style="background-color: rgb(230, 98, 118); border-radius: 10%;" type="button" onclick="decrease()">LEAVE MESS</button>
+                </div>
+                    
+                    <h4 style=" color: lightseagreen;">Placeholder 
+                    </h4>
+                    <ul> 
+                        <li style="font-family: sans-serif;color:"> 1</li>
+                        <li style="font-family: sans-serif;color:"> 2</li>
+                        <li style="font-family: sans-serif;color:"> 3</li>
+                    </ul>
+                    <h4 style="color: lightseagreen;">FEEDBACK</h4>
+                    <form>
+                        <div class="row mb-3">
+                          <label for="inputEmail3" style="font-size: medium;"class="col-sm-2 col-form-label">Name</label>
+                          <div class="col-sm-10">
+                            <input type="email" class="form-control" id="inputEmail3">
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <label for="inputPassword3" class="col-sm-2 col-form-label">Roll no.</label>
+                          <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword3">
+                          </div>
+                        </div>
+                        <br>
+                        <fieldset class="row mb-3">
+                          <legend class="col-form-label col-sm-2 pt-0">MESS FEEDBACK FORM</legend>
+                          <div class="col-sm-10">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                              <label class="form-check-label" for="gridRadios1">
+                                GOOD FOOD
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                              <label class="form-check-label" for="gridRadios2">
+                                AVERAGE
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" >
+                              <label class="form-check-label" for="gridRadios3">
+                                NEEDS IMPROVEMENT
+                              </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option4">
+                                <label class="form-check-label" for="gridRadios2">
+                                  MENU SHOULD BE CHANGED
+                                </label>
+                          </div>
+                        </fieldset>
+                        <br>
+                        <div class="button1">
+                        <button style="background-color: rgb(173, 235, 196); border-radius: 10%; " type="submit" class="btn btn-primary">Submit</button>
+                    </div>  
+                    </form>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <h6 style="font-family:Arial, Helvetica, sans-serif ;font-size: xx-large;">Cure on Net.com</h6>
+      </div>
+
+      
+
+      
+    </div>
+    <p>A one stop solution for all your problems!!</p>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-6 col-xs-12">
+        <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by 
+     <a href="home.html">Cure on Net.com</a>
+        </p>
+        <p>Contact Us :-</p>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <ul class="social-icons">
+          <li><a class="facebook" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+          <li><a class="twitter" href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+          <li><a class="dribbble" href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+          <li><a class="linkedin" href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>   
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+</html>
