@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>CureOnNet.com</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        h1 {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="Temp"
+  agent-id="88f451a5-f4e3-476e-9ae8-798d14e47233"
+  language-code="en"
+></df-messenger>
+
+<meta name="viewport" content="width-device-width, initial-scale=1">
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="home.html">Home</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="covid.html">Covid</a>
+                </div>               
+                <div class="nav-link-wrapper">
+                    
+                    <a href="blog.html">Health Blog</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    
+                    <a href="featured.html">Featured</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    
+                    <a href="health.html">Health Checkup</a>
+                </div>
+
+                
+            </div>
+            <div class="right-side">
+                    <div class="brand">
+                        <div class="nav-link-wrapper">
+                        <a href="team.html">The Spectaculars</a>
+                    </div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="profile-content-wrapper">
+          
+          <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"class="line-1 anim-typewriter">Simplyfing Health care for you</p>
+        </div>
+
+            
+
+            <div class="content-wrapper">
+                <div class="portfolio-items-wrapper">
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/xyz/covid1.jpg)"></div>
+                        <a href="covid.html">
+                            <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="images/logos/pill-cov.png">
+                            </div>
+
+                            <div class="subtitle">Covid</div>
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/xyz/healthblog.jpg)"></div>
+                        <a href="blog.html">
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="images/logos/blogger-logo-icon.png" alt="">
+                            </div>
+
+                            <div class="subtitle">Health Blog</div>
+                        </div>
+                    </a>
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/pen.jpeg)"></div>
+                        <a href="featured.html">
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="images/logos/face.png" alt="">
+                            </div>
+
+                            <div class="subtitle">Featured</div>
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/cup.jpeg)"></div>
+                        <a href="health.html">
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="images/logos/positive-feedback.png" alt="">
+                            </div>
+
+                            <div class="subtitle">Feedback</div>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+<footer class="site-footer" ;>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <h6 style="font-family:Arial, Helvetica, sans-serif ;font-size: xx-large;">Cure on Net.com</h6>
+      </div>
+
+      
+
+      
+    </div>
+    <p>A one stop solution for all your problems!</p>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-6 col-xs-12">
+        <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by 
+     <a href="home.html">Cure on Net.com</a>
+        </p>
+        <p>Contact Us :-</p>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <ul class="social-icons">
+          <li><a class="facebook" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+          <li><a class="twitter" href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+          <li><a class="dribbble" href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+          <li><a class="linkedin" href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>   
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('image-blur');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+
+</script>
+
+
+</html>
